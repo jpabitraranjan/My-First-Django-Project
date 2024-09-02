@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{%static 'myglobal.css' %}"
+  <body>
+    {% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %}
+     
+    {% with firstname='madarchod' %}
+    <h1>
+      Hello {{firstname}}, how are you? It's {% now "g:i a" %} you must sleep!
+    </h1>
+    {% endwith %}
+    
+    <table border = '1'>
+      <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Phone</th>
+        <th>Joined Date</th>
+      </tr>
+      {%for i in mymembers%}
+      <tr>
+        <th>{{i.id}}</th>
+        <td>{{i.firstname}}</td>
+        <td>{{i.lastname}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.joined_date}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+
+
+    
+    
+    {% comment %} 
+    {% for x in fruits %}
+    <h1>{{ x }}</h1>
+    {% endfor %}
+    <p>In views.py you can see what the fruits variable looks like.</p>
+    {% endcomment %} 
+    
+
+
+    {%include 'footer.html'%}
+  
+  </body>
+</html>
