@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-9ivpq-0n=r!xpr78ciilncsuoc3=k+gd_jmm8@sfn_*dm#*5b^'
+SECRET_KEY = #kept in hidden
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -76,14 +76,7 @@ WSGI_APPLICATION = 'my_tennis_club.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'masteruser',
-        'PASSWORD': 'Pabitra2005',
-        'HOST': 'w3-django-project.c3ckuke6s0b1.eu-north-1.rds.amazonaws.com',
-        'PORT': '5432'
-    }
+     #kept it hidden
 }
 
 
@@ -91,18 +84,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    #kept it hidden
 ]
 
 
